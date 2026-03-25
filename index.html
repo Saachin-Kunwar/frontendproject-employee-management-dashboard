@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Employee Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Employee Dashboard</h2>
+
+<!-- SEARCH -->
+<input type="text" id="searchInput" placeholder="Search employee...">
+
+<!-- FORM -->
+<h3 id="formTitle">Add Employee</h3>
+
+<input type="text" id="empName" placeholder="Name">
+<input type="text" id="empDept" placeholder="Department">
+<input type="number" id="empTarget" placeholder="Target">
+<input type="number" id="empAchieved" placeholder="Achieved">
+<input type="text" id="empSalary" placeholder="Salary">
+
+<button id="submitBtn" onclick="handleSubmit()">Add</button>
+
+<!-- TABLE -->
+<table id="employeeTable">
+  <thead>
+    <tr>
+      <th>Department</th>
+      <th>Employee</th>
+      <th>Target</th>
+      <th>Achieved</th>
+      <th>Salary</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+
+<!-- PAGINATION -->
+<div id="pagination">
+  <button onclick="prevPage()">Prev</button>
+  <span id="pageInfo"></span>
+  <button onclick="nextPage()">Next</button>
+</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>
